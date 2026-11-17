@@ -76,18 +76,18 @@ const GAMBAR=[
   'keunggulanbahan.png', // GAMBAR 4 DI SINI  (Foto produk 3)
   'panduanukuran.jpg', // GAMBAR 5 DI SINI  (Size chart)
   'fotobahan.png', // GAMBAR 6 DI SINI  (Foto bahan)
-  '', // GAMBAR 7 DI SINI  (Foto detail)
+  'testimoni', // GAMBAR 7 DI SINI  (Foto detail)
   'pengiriman.png', // GAMBAR 8 DI SINI  (Info pengiriman)
 ];
 const G=(n,l)=>({t:'img',src:GAMBAR[n-1]||'',l:'GAMBAR '+n+' DI SINI - '+l});
 
-const DEF={o:{wa:'6281234567890' /* NOMOR WHATSAPP DI SINI (awali 62) */,l1:'HARGA NORMAL',n:'Rp 199.000',l2:'PROMO HANYA HARI INI JADI',p:'Rp 135.000',sold:1200,left:21,
+const DEF={o:{wa:'6289682026605' /* NOMOR WHATSAPP DI SINI (awali 62) */,l1:'HARGA NORMAL',n:'Rp 199.000',l2:'PROMO HANYA HARI INI JADI',p:'Rp 135.000',sold:1200,left:21,
 v:['HITAM / M / LENGAN PENDEK','HITAM / M / LENGAN PANJANG','HITAM / L / LENGAN PENDEK','HITAM / L / LENGAN PANJANG','PUTIH / M / LENGAN PENDEK','PUTIH / M / LENGAN PANJANG','PUTIH / L / LENGAN PENDEK','PUTIH / L / LENGAN PANJANG']},
 b:[G(1,'Banner atas'),T('KAOS KSATRIA','h1') /* JUDUL PRODUK DI SINI */,T('4,9 ★★★★★ 1,2RB, Penilaian 3RB+ Terjual','r'),
 {t:'bd',a:'Jaminan Kepuasan',c:'Kualitas Terbaik'},G(2,'Foto produk 1'),G(3,'Foto produk 2'),
-T('JUDUL ATAU NAMA DESAIN','h3'),T('Tulis deskripsi singkat produkmu di sini.','p'),
+T('KAOS KESATRIA – JANGAN MENGHINA, JANGAN MAU DIINJAK','h3'),T('Bukan sekedar kaos, Tetapi simbol harga diri, keberanian, dan prinsip kehidupan dengan desain kesatria yang gagah dan berkarakter.','p'),
 T('<li>Bahan premium</li><li>Nyaman dipakai</li><li>Jahitan rapi dan kuat</li>','ul'),
-T('“Tulis kutipan atau tagline produkmu di sini.”','q'),
+T('“Tetap rendah hati, jangan kehilangan harga diri.”','q'),
 G(4,'Foto produk 3'),G(5,'Size chart'),G(6,'Foto bahan'),T('PEMAPARAN DETIL','h2'),G(7,'Foto detail'),
 T('Bisa Kirim Ke Seluruh Lokasi Di Indonesia','h2'),G(8,'Info pengiriman'),{t:'or'}]};
 let D;try{D=JSON.parse(localStorage.getItem(K))}catch(e){}
